@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguindo os estudos</title>
+    <link rel="shortcut icon" href="imagens/icon spiderman.png.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito e Itálico</h2>
+    <p>O rato roeu a roupa do <b>Rei de Roma</b>.</p> <!--Nesse caso (usando a tag b), o negrito é apenas uma customização, tem valor de estilo.-->
+    <p>O rato roeu a roupa do <strong>Rei de Roma</strong>.</p><!--Já nesse caso (usando a tag strong), o negrito é usado para dar destaque a uma palavra (normalmente para palavras mais importantes)-->
+    <p>O rato roeu a roupa do <i>Rei de Roma</i>.</p><!--Nesse caso (usando a tag i), o negrito é apenas uma customização, tem valor de estilo.-->
+    <p>O rato roeu a roupa do <em>Rei de Roma</em>.</p><!--Já nesse caso (usando a tag em), o negrito é usado para dar destaque a uma palavra (normalmente para palavras mais importantes)-->
+    <h2>Marcações de texto</h2>
+    <p>O rato roeu a roupa do <mark style="background-color: lime;">Rei de Roma.</mark></p>
+    <p>O rato roeu a roupa do <mark>Rei de Roma.</mark></p>
+    <p>O rato roeu a roupa do <mark style="background-color: pink;">Rei de Roma.</mark></p>
+    <p>O rato roeu a roupa do <big>Rei de Roma</big>.</p><!--Essa tag está assim pq ela está absoleta, ou seja, não está mais em uso. Portanto, evitar usar ela-->
+    <p>O rato roeu a roupa do <small>Rei de Roma</small>.</p>
+    <p>O rato roeu a roupa do <del>Rei de Roma</del>.</p>
+    <p>O rato roeu a roupa do <ins>Rei de Roma</ins>.</p><!--Já nesse caso (usando a tag ins), o negrito é usado para dar destaque a uma palavra (normalmente para palavras mais importantes)-->
+    <p>O rato roeu a roupa do <u>Rei de Roma</u>.</p><!--Nesse caso (usando a tag u), o negrito é apenas uma customização, tem valor de estilo.-->
+    <p>Eu quero fazer a conta x<sup>20</sup>+3</p>
+    <p>A fórmula da água é H<sub>2</sub>O</p>
+    <h1>Outras formatações</h1>
+    <h2>Códigos-fonte</h2>
+    <p>O comando <code>document.getElementbyId('teste')</code> é escrito em JavaScript.</p>
+    <pre><!--tudo que estiver escrito dentro dessa tag respeita qualquer espaço ou formatação que você colocar aqui no visualstudio (como por exemplo os espaços entre os textos e quebras de linha)-->
+        <code>
+let numero = documet.getElementbyId('teste')
+    if(Number(numero.value) >= 100)
+        return true
+    if(Number(numero.value) < 100)
+        return false
+        </code>
+    </pre>
+    <h1>Citações</h1>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+    <h2>Citações Completas</h2>
+    <p>Segundo Wagner Wagner, no seu livro Como fugir da prisão:</p>
+    <h2>Abreviações</h2>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">Você precisa de um tanque e duas metralhadoras!</blockquote>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTLM</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, estou adorando!</p>
+    <p><bdo dir="rtl">Estou aprendendo HTML!</bdo></p>
+</body>
+</html>

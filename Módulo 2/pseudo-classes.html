@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo coisas</title>
+    <style>
+
+        /* SELETORES PERSONALIZADOS:
+
+            # - ID
+            . - CLASSE
+            : - PSEUDO-CLASSE
+            :: - PSEUDO-ELEMENTO
+            > - CHILDREN
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            color: blue;
+        }
+
+        #div1 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            display: inline-block;
+            text-align: center;
+        }
+
+        #div1:hover {
+            background-color: yellow;
+        }
+
+        div > p {
+            display: none;
+        } 
+
+        #div2:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        #div2:hover {
+            color: red;
+        }
+
+        #a1 {
+            text-decoration: none;
+        }
+
+        #a1:visited { /*usado para editar links já clicados*/
+            color: aqua;
+        }
+
+        #a1:hover { /*usado para editar quando o mouse passar por cima*/
+            color: black;
+            text-decoration: underline;
+        }
+
+        #a1:active { /*usado para editar quando clicar em cima */
+            color: yellow;
+        }
+
+        #a2 {
+            text-decoration: none;
+        }
+
+        /* #a2::after {
+            content: '←';
+        }
+
+        #a2::before {
+            content: '→';
+        } */
+
+        .especial::after {
+            content: '◄';
+        }
+
+        .especial::before {
+            content: '►';
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Pseudo-Classes e Pseudo-Elementos</h1>
+    <div id="div1">1</div>
+    <div id="div1">2</div>
+    <div id="div1">3</div>
+    <h2>Pseudo-Classes</h2>
+    <h3>Exemplo do HOVER</h3>
+    <div id="div2">
+        Passe o mouse aqui
+        <p>Texto escondido!!</p>
+    </div>
+    <p>Fim do exemplo</p>
+
+    <h3>Personalizando links</h3>
+    <ul>
+        <li><a id="a1" href="https://github.com/cursoemvideo" target="_blank">Repositório GitHub</a></li>
+        <li><a id="a1" href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank">Canal do YouTube</a></li>
+        <li><a id="a1" href="https://www.cursoemvideo.com/matricule-se-agora/?gclid=Cj0KCQjwyLGjBhDKARIsAFRNgW9VvLNmqpI7loohujuT-Z0dy4jngmDNow3QC1GYAu5w07LznGZESj8aAk3fEALw_wcB" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+
+    <h2>Pseudo-Elementos</h2>
+    <ul>
+        <li><a id="a2" href="https://github.com/cursoemvideo" target="_blank">Repositório GitHub</a></li>
+        <li><a id="a2" class="especial" href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank">Canal do YouTube</a></li>
+        <li><a id="a2" href="https://www.cursoemvideo.com/matricule-se-agora/?gclid=Cj0KCQjwyLGjBhDKARIsAFRNgW9VvLNmqpI7loohujuT-Z0dy4jngmDNow3QC1GYAu5w07LznGZESj8aAk3fEALw_wcB" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

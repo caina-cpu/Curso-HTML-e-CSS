@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap'); /* Fontes importadas do google */
+
+        @font-face {
+            font-family: 'Love';
+            src: url('fontes/love larry ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        } /* Fonte baixada da internet */
+
+        body {
+            font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+            /*USAR SEMPRE AS MEDIDAS PX OU EM PARA O TAMANHO DA FONTE
+            Para simplificar o código (que normalmente será: 
+            font-family
+            font-weight
+            font-size
+            font-style
+            Podemos colocar tudo na mesma tag, seguindo a seguinte ordem:
+            font: style, weight, size, family
+            ex: 
+            font: italic(style) bolder(weight) 3em(size) 'Work Sans', sans-serif(family);
+            */
+        }
+
+        h1 {
+            font-family: 'Love', Arial, Helvetica, sans-serif;
+            font-size: 3em;
+        }
+
+        h2 {
+            font-family: 'Dancing Script', Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+
+        p {
+            text-indent: 20px;
+        } /* Usado para definir o espaço para o texto começar */
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus facilis odio accusamus tempore corrupti, explicabo minima deserunt assumenda quis aperiam perferendis pariatur. Fuga nobis illum quasi, quam corrupti nihil.</p>
+    <h2>Título 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus facilis odio accusamus tempore corrupti, explicabo minima deserunt assumenda quis aperiam perferendis pariatur. Fuga nobis illum quasi, quam corrupti nihil. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur repellendus facilis odio accusamus tempore corrupti, explicabo minima deserunt assumenda quis aperiam perferendis pariatur. Fuga nobis illum quasi, quam corrupti nihil.</p>
+</body>
+</html>
