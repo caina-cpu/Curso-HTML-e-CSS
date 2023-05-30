@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros testes com background</title>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .quadrado {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black; 
+            background-color: lightgray;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        #div1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        #div2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        #q1 {
+            background-color: lightblue;
+        }
+
+        #q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        #q3 {
+            background-image: url(imagens-cap19/pattern003.png);
+        }
+
+        .qq {
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-size: 70px 70px;
+        }
+
+        #q4 {
+            background-repeat: repeat-x;
+        }
+
+        #q5 {
+            background-repeat: repeat-y;
+        }
+
+        #q6 {
+            background-repeat: repeat;
+        }
+
+        .qqq {
+            background-image: url(imagens-cap19/wallpaper003.jpg);
+            height: 200px;
+            width: 98%;
+            border: 2px solid black; 
+            border-radius: 10px;
+            margin: 10px 0px;
+        }
+
+        #q7 {
+            background-position: left top;
+        }
+
+        #q8 {
+            background-position: left center;
+        }
+
+        #q9 {
+            background-position: right bottom;
+        }
+
+        #q10 {
+            background-position: center center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de aplicação de imagens</h1>
+    <div id="div1">
+        <div class="quadrado" id="q1"></div>
+        <div class="quadrado" id="q2"></div>
+        <div class="quadrado" id="q3"></div>
+    </div>
+    <div id="div2">
+        <div class="quadrado qq" id="q4"></div>
+        <div class="quadrado qq" id="q5"></div>
+        <div class="quadrado qq" id="q6"></div>
+    </div>
+    <div id="div3">
+        <div class="qqq" id="q7"></div>
+        <div class="qqq" id="q8"></div>
+        <div class="qqq" id="q9"></div>
+        <div class="qqq" id="q10"></div>
+    </div>
+</body>
+</html>
