@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizado HTML e CSS</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        header {
+            display: grid;
+            width: 100%;
+            height: 100px;
+            background-color: lightblue;
+            border-bottom: 4px solid black;
+            border-top: 4px solid black;
+        }
+
+        header > h1 {
+            text-align: center;
+            font-size: 30pt;
+        }
+
+        header > p { 
+            text-align: center;
+            font-size: 15pt;
+        }
+
+        #principal {
+            text-align: center;
+            margin: 20px;
+            font-size: 30pt;
+        }
+
+        ul {
+            margin: 0px 50px;
+        }
+
+        ul > li {
+            font-size: 30pt;
+        }
+
+        ul > li > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ol {
+            list-style-type: '\2714\00A0\00A0';
+        }
+
+        ol > li {
+            font-size: 20pt;
+            margin: 10px 40px;
+        }
+
+        ol > li > a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ol > li > a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            background-color: lightblue;
+            color: black;
+            font-size: 15pt;
+            border-bottom: 4px solid black;
+            border-top: 4px solid black;
+        }
+
+        footer > p > a {
+            font-family: 'Lobster', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+
+        footer > p > a:hover {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aprendizados em HTML e CSS</h1>
+        <p>Exercícios, fundamentos e treinos</p>
+    </header>
+    <h1 id="principal">Clique no conteúdo desejado:</h1>
+    <ul>
+        <li>Módulo 1
+            <ol type="a" start="1">
+                <li><a href="Módulo 1/base.html">Base</a></li>
+                <li><a href="Módulo 1/base-2.html">Base 2</a></li>
+                <li><a href="Módulo 1/links e ancoras.html">Links e âncoras</a></li>
+                <li><a href="Módulo 1/links e ancoras-pg2.html">Links e âncoras 2</a></li>
+                <li><a href="Módulo 1/listas.html">Listas</a></li>
+                <li><a href="Módulo 1/midias.html">Mídias</a></li>
+            </ol>
+        </li>
+        <br>
+        <hr>
+        <br>
+        <li>Módulo 2
+            <ol type="a" start="7">
+                <li><a href="Módulo 2/degrade.html">Degradê</a></li>
+                <li><a href="Módulo 2/fontes.html">Fontes</a></li>
+                <li><a href="Módulo 2/pseudo-classes.html">Pseudo-classes</a></li>
+                <li><a href="Módulo 2/site-teste.html">Site-teste</a></li>
+                <li><a href="Módulo 2/desafio10/index.html">Exercício final do módulo (site android)</a></li>
+            </ol>
+        </li>
+        <br>
+        <hr>
+        <br>
+        <li>Módulo 3
+            <ol type="a" start="12">
+                <li><a href="Módulo 3/background.html">Comportamentos de Background</a></li>
+                <li><a href="Módulo 3/back-conteudos.html">Background com conteúdo</a></li>
+            </ol>
+        </li>
+        <br>
+        <hr>
+        <br>
+        <li>Módulo 4 (ainda em desenvolvimento)</li>
+        <br>
+        <hr>
+        <br>
+        <li>Módulo 5 (ainda em desenvolvimento)</li>
+        <br>
+    </ul>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/caina-cpu" target="_blank">Cainã Mello</a></p>
+    </footer>
+    
+</body>
+</html>

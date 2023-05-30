@@ -14,6 +14,30 @@
 
         h1 {
             text-align: center;
+            margin: 20px;
+        }
+
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: lightgray;
+        }
+
+        footer > p {
+            text-align: center;
+            font-size: 15pt;
+            margin: 20px;
+            padding: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            transition-duration: 0.5s;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
         }
 
         .quadrado {
@@ -22,15 +46,18 @@
             border: 2px solid black; 
             background-color: lightgray;
             border-radius: 10px;
-            margin: 10px;
+            margin: 10px 10px 10px 0px;
         }
 
         #div1 {
             display: flex;
-            justify-content: center;
         }
 
         #div2 {
+            display: flex;
+        }
+        
+        #div3 {
             display: flex;
             justify-content: center;
         }
@@ -89,10 +116,23 @@
             background-position: center center;
         }
 
+        #q11 {
+            background-image: url(imagens-cap19/wallpaper002.jpg);
+            background-repeat: no-repeat;
+            background-size: contain; /*O CONTAIN é usado para mostrar a imagem 100% exibida, sem cortes*/
+        }
+
+        #q12 {
+            background-image: url(imagens-cap19/wallpaper002.jpg);
+            background-size: cover; /*O COVER é usado para cobrir a tela completamente com a imagem*/
+        }
+
     </style>
 </head>
 <body>
-    <h1>Teste de aplicação de imagens</h1>
+    <header>
+        <h1>Teste de aplicação de imagens</h1>
+    </header>
     <div id="div1">
         <div class="quadrado" id="q1"></div>
         <div class="quadrado" id="q2"></div>
@@ -103,11 +143,18 @@
         <div class="quadrado qq" id="q5"></div>
         <div class="quadrado qq" id="q6"></div>
     </div>
-    <div id="div3">
+    <div>
         <div class="qqq" id="q7"></div>
         <div class="qqq" id="q8"></div>
         <div class="qqq" id="q9"></div>
         <div class="qqq" id="q10"></div>
     </div>
+    <div id="div3">
+        <div class="quadrado" id="q11"></div>
+        <div class="quadrado" id="q12"></div>
+    </div>
+    <footer>
+    <p>Voltar para a <a href="../index.html">tela inicial</a></p>
+    </footer>
 </body>
 </html>
