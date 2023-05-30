@@ -13,11 +13,22 @@
         }
         body {
             height: 100vh;
+            /*
             background-color: black;
             background-image: url(imagens-cap19/wallpaper002.jpg);
             background-position: center center;
+            background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+
+            
+            Shorthand - background:
+                background: color > image > position > repeat > [size] > attachment
+                (o único que deve ser colocado separado é o background-size, pois não funciona no shorthand)
+            */
+
+            background: black url(imagens-cap19/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
